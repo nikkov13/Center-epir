@@ -17,6 +17,10 @@
     "gulp-terser": "^1.4.0",
     "gulp-w3c-html-validator": "^2.0.1"
   },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  },
   "engines": {
     "node": "12.18.2"
   }

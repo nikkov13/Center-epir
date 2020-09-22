@@ -1,0 +1,33 @@
+.team {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+
+.team__title {
+  margin-bottom: 50px;
+}
+
+.team__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__description {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-left: 50px;
+  padding-bottom: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background-color: $basic-ocher;
+  }
+}

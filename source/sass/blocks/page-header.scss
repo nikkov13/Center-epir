@@ -1,0 +1,30 @@
+.page-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-header__wrapper {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  padding-top: 10px;
+}
+
+.page-header__contacts {
+  margin-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-header__link {
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 14px;
+  color: $basic-lightgrey;
+}

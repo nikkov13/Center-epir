@@ -1,0 +1,73 @@
+.projects {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+
+.projects__title {
+  margin-bottom: 50px;
+}
+
+.projects__wrapper {
+  display: flex;
+}
+
+.projects__tabs {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__tab {
+  position: relative;
+  min-height: 70px;
+  width: 300px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: start;
+  vertical-align: middle;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: $basic-olive;
+    transition-duration: 0.3s;
+  }
+  
+  &--active {
+    &::before {
+      background-color: $basic-ocher;
+      animation-name: rotate;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: $basic-ocher;
+    }
+    outline: none;
+  }
+}
+
+.projects__list {
+  position: relative;
+  @include reset-list;
+}

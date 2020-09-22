@@ -1,0 +1,26 @@
+.button {
+  width: 200px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: inherit;
+  font-size: 18px;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $basic-lightgrey;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+  &:hover,
+  &:focus {
+    transform: translate(5px, -5px);
+    box-shadow: -5px 5px 0 0 rgba($basic-olive, 0.5);
+    outline: none;
+  }
+
+  &:active {
+    transform: translate(0, 0);
+    box-shadow: none;
+    background-color: rgba($basic-darkolive, 0.1);
+  }
+}
