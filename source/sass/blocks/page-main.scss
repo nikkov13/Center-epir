@@ -1,3 +1,6 @@
-.page-main {
+.page-main__layer {
+  position: relative;
+  z-index: 1;
   background-color: $basic-background;
+  border-top: 1px solid rgba($basic-olive, 0.4);
 }

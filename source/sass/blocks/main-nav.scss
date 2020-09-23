@@ -4,7 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: rgba($basic-olive, 0.4);
+  transition: .5s;
+
+  &--olive {
+    background-color: rgba($basic-ocher, 0.2);
+  }
 }
 
 .main-nav__list {

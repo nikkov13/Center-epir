@@ -12,6 +12,8 @@
 }
 
 .promo__wrapper {
+  position: relative;
+  z-index: 0;
   width: 60%;
   box-sizing: border-box;
   margin-left: auto;
