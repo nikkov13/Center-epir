@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
   $(".main-nav").on("click", ".main-nav__link", function(evt) {
     evt.preventDefault();

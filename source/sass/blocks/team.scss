@@ -19,14 +19,14 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 60px;
-  padding-left: 50px;
+  padding-left: 45px;
   padding-bottom: 5px;
 
   &::before {
     content: "";
     position: absolute;
     left: 0;
-    width: 8px;
+    width: 5px;
     height: 100%;
     background-color: $basic-ocher;
   }

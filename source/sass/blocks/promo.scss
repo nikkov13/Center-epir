@@ -23,9 +23,10 @@
   padding-right: 50px;
   background-color: $basic-background;
   border-bottom: 2px solid $basic-ocher;
-  animation-name: shadow;
-  animation-delay: 0.5s;
-  animation-duration: 2s;
+  opacity: 0;
+  animation-name: emersion, shadow;
+  animation-delay: 0.5s, 1s;
+  animation-duration: 1.3s, 2s;
   animation-fill-mode: forwards;
 }
 

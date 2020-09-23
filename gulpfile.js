@@ -31,8 +31,8 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/*.html")
-    //.pipe(htmlValidator())
-    //.pipe(htmlValidator.reporter())
+    .pipe(htmlValidator())
+    .pipe(htmlValidator.reporter())
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
@@ -71,6 +71,7 @@ const server = (done) => {
       baseDir: "build"
     },
     cors: true,
+    ui: false,
     notify: false,
     ui: false,
   });

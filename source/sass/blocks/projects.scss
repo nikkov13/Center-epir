@@ -71,3 +71,13 @@
   position: relative;
   @include reset-list;
 }
+
+.projects__item {
+  opacity: 0;
+
+  &--active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .7s;
+  }
+}

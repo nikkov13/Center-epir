@@ -12,4 +12,8 @@
 
 .about-us__text {
   margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

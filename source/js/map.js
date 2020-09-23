@@ -1,3 +1,5 @@
+"use strict";
+
 ymaps.ready(init);
 
 let myMap;
@@ -8,14 +10,14 @@ function init() {
     controls: [],
     zoom: 15
   });
-  
-  $(".js-tab-slider__tab").on("click", () => {
-    myMap.container.fitToViewport();
-  });
 
-  myPlacemark = new ymaps.Placemark([55.733295, 37.620941], {
-    hintContent: "Центр ЭПИР"
-  });
+  let myPlacemark = new ymaps.Placemark([55.733295, 37.620941], {
+      hintContent: "Центр ЭПИР"
+    },
+    {
+      preset: "islands#icon",
+      iconColor: "#1B593C"
+    });
 
   myMap.geoObjects
     .add(myPlacemark);
