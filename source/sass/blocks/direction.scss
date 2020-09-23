@@ -1,0 +1,14 @@
+.direction__title {
+  margin-top: 0;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.direction__list {
+  @include reset-list;
+}
+
+.direction__item {
+  margin-bottom: 10px;
+}

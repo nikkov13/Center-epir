@@ -1,0 +1,26 @@
+.main-nav {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s;
+
+  &--olive {
+    background-color: rgba($basic-ocher, 0.2);
+  }
+}
+
+.main-nav__list {
+  @include reset-list;
+  display: flex;
+}
+
+.main-nav__item {
+  margin-left: 25px;
+  font-weight: 700;
+}
+
+.main-nav__link {
+  color: $basic-grey;
+}
