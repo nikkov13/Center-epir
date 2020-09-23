@@ -6,8 +6,8 @@
   align-items: center;
   transition: .5s;
 
-  &--olive {
-    background-color: rgba($basic-ocher, 0.2);
+  &--ocher {
+    background-color: lighten($basic-ocher, 18);
   }
 }
 

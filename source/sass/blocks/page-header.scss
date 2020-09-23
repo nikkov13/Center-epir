@@ -21,6 +21,12 @@
   margin-right: 50px;
   display: flex;
   justify-content: flex-end;
+  transition-duration: 0.3s;
+
+  &--hidden {
+    opacity: 0;
+  }
+
 }
 
 .page-header__link {
