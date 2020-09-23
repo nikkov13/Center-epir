@@ -3,6 +3,9 @@ language: node_js
 node_js:
   - "12.18.2"
 
+notifications:
+  email: false
+
 before_deploy:
   - npm run build
   - echo -e "node_modules\npackage-lock.json" > .gitignore
