@@ -1,22 +1,39 @@
 .projects {
   max-width: 1150px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 150px;
+
+  @media (max-width: 1150px) {
+    margin-bottom: 75px;
+  }
 }
 
 .projects__title {
   margin-bottom: 50px;
+
+  @media (max-width: 1150px) {
+    margin-bottom: 35px;
+  }
 }
 
 .projects__wrapper {
   display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .projects__tabs {
   margin-right: 50px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
 }
 
 .projects__tab {
@@ -37,7 +54,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -65,19 +82,41 @@
     }
     outline: none;
   }
+
+  @media (max-width: 1150px) {
+    width: 200px;
+
+    &--active {
+      &::before {
+        background-color: $basic-ocher;
+        animation-name: rotate1150;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+
+    &--active {
+      &::before {
+        background-color: $basic-ocher;
+        animation-name: rotate768;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
 }
 
 .projects__list {
-  position: relative;
   @include reset-list;
+  position: relative;
 }
 
 .projects__item {
-  opacity: 0;
-
-  &--active {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: .7s;
+  @media (max-width: 1150px) {
+    margin-bottom: 10px;
   }
 }

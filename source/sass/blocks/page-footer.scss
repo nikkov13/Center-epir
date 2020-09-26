@@ -10,4 +10,10 @@
   font-size: 12px;
   text-align: center;
   background-color: rgba($basic-olive, 0.1);
+
+  @media (max-width: 1150px) {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 11px;
+  }
 }
