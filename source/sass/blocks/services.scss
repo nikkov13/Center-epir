@@ -1,12 +1,25 @@
 .services {
   max-width: 1150px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 150px;
+
+  @media (max-width: 1150px) {
+    margin-bottom: 75px;
+  }
+  
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .services__title {
   margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .services__list {
@@ -24,5 +37,22 @@
 
   &:nth-child(3n) {
     margin-right: 0;
+  }
+
+  @media (max-width: 1150px) {
+    width: 45%;
+    margin-right: 5%;
+
+    &:nth-child(3n) {
+      margin-right: 5%;
+    }
+    
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 }

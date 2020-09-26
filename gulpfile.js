@@ -21,8 +21,8 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(sourcemap.write("."))
     .pipe(rename({ suffix: ".min"}))
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
@@ -43,8 +43,8 @@ const jsMin = () => {
   return gulp.src("source/js/*.js")
     .pipe(sourcemap.init())
     .pipe(terser())
-    .pipe(sourcemap.write("."))
     .pipe(rename({suffix: ".min"}))
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"));
 }
 

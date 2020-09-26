@@ -2,13 +2,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .form__wrapper {
   width: 100%;
   margin-bottom: 45px;
+
   &--text-input {
     width: 45%;
+  }
+
+  @media (max-width: 768px) {
+    &--text-input {
+      width: 100%;
+    }
   }
 }
 

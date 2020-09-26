@@ -1,3 +1,13 @@
+.direction {
+  opacity: 0;
+
+  &--active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .7s;
+  }
+}
+
 .direction__title {
   margin-top: 0;
   font-family: "Rubik", "Arial", sans-serif;

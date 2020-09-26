@@ -22,6 +22,32 @@
       box-shadow: -10px 10px 0 0 rgba($basic-ocher, 0.8);
     }
   }
+
+  @media (max-width: 1150px) {
+    &:nth-child(n+3) {
+      border-bottom: 2px solid rgba($basic-olive, 0.6);
+      
+      &:hover {
+        box-shadow: -10px 10px 0 0 rgba($basic-ocher, 0.6);
+      }
+    }
+  
+    &:nth-child(n+5) {
+      border-bottom: 2px solid rgba($basic-olive, 0.8);
+  
+      &:hover {
+        box-shadow: -10px 10px 0 0 rgba($basic-ocher, 0.8);
+      }
+    }
+  
+    &:nth-child(n+7) {
+      border-bottom: 2px solid rgba($basic-olive, 1);
+  
+      &:hover {
+        box-shadow: -10px 10px 0 0 rgba($basic-ocher, 1);
+      }
+    }
+  }
 }
 
 .services-card__title {

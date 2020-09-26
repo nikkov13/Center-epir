@@ -8,4 +8,12 @@
   &--main {
     font-size: 34px;
   }
+  
+  @media (max-width: 1150px) {
+    font-size: 26px;
+
+    &--main {
+      font-size: 26px;
+    }
+  }
 }
