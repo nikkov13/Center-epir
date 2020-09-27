@@ -1,16 +1,17 @@
-const gulp = require("gulp");
-const plumber = require("gulp-plumber");
-const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
-const postcss = require("gulp-postcss");
-const autoprefixer = require("autoprefixer");
-const csso = require("gulp-csso");
-const htmlValidator = require("gulp-w3c-html-validator");
-const htmlmin = require("gulp-htmlmin");
-const terser = require("gulp-terser");
-const rename = require("gulp-rename");
-const imagemin = require("gulp-imagemin");
-const sync = require("browser-sync").create();
+const gulp = require("gulp"),
+      plumber = require("gulp-plumber"),
+      sourcemap = require("gulp-sourcemaps"),
+      sass = require("gulp-sass"),
+      postcss = require("gulp-postcss"),
+      autoprefixer = require("autoprefixer"),
+      csso = require("gulp-csso"),
+      htmlValidator = require("gulp-w3c-html-validator"),
+      htmlmin = require("gulp-htmlmin"),
+      babel = require("gulp-babel"),
+      terser = require("gulp-terser"),
+      rename = require("gulp-rename"),
+      imagemin = require("gulp-imagemin"),
+      sync = require("browser-sync").create();
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
@@ -42,6 +43,7 @@ exports.html = html;
 const jsMin = () => {
   return gulp.src("source/js/*.js")
     .pipe(sourcemap.init())
+    .pipe(babel())
     .pipe(terser())
     .pipe(rename({suffix: ".min"}))
     .pipe(sourcemap.write("."))
