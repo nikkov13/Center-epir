@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
   let $window = $(window),
+      windowWidth = $window.width(),
       $toggle = $(`.main-nav__toggle`),
       $menu = $(`.main-nav__list`);
 
@@ -10,20 +11,27 @@ $(document).ready(function() {
   }
 
   $window.resize(function() {
-    if ($window.width() <= 768) {
-      if (!$menu.hasClass(`main-nav__list--close`)) {
-        $menu.addClass(`main-nav__list--close`);
+    if ($window.width() != windowWidth) {
+      if (window.outerWidth <= 768) {
+  
+        if (!$menu.hasClass(`main-nav__list--close`)) {
+          $menu.addClass(`main-nav__list--close`);
+        }
+  
+        if (!$menu.hasClass(`visually-hidden`)) {
+          $menu.addClass(`visually-hidden`);
+        }
+  
+      } else {
+        $menu.removeClass(`visually-hidden`).removeClass(`main-nav__list--open`).removeClass(`main-nav__list--close`);
       }
-      if (!$menu.hasClass(`visually-hidden`)) {
-        $menu.addClass(`visually-hidden`);
-      }
-    } else {
-      $menu.removeClass(`visually-hidden`).removeClass(`main-nav__list--open`).removeClass(`main-nav__list--close`);
+      windowWidth = $window.width();
     }
   });
 
   $toggle.on(`click`, function(evt) {
     evt.preventDefault();
+    
     if ($menu.hasClass(`main-nav__list--close`)) {
       $menu.removeClass(`main-nav__list--close`).addClass(`main-nav__list--open`).removeClass(`visually-hidden`);
     } else {
