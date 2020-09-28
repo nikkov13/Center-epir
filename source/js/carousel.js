@@ -14,7 +14,8 @@ $(document).ready(function() {
     carouselWidth = $carousel.width();
     if ($window.width() > 768) {
       $carouselList.css(`left`, 0);
-    } else if (parseInt($carouselList.css(`left`)) < carouselWidth - carouselListWidth) {
+    } else 
+    if (parseInt($carouselList.css(`left`)) < carouselWidth - carouselListWidth) {
       $carouselList.css(`left`, carouselWidth - carouselListWidth);
     }
   });

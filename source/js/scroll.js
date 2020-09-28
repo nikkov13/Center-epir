@@ -1,29 +1,17 @@
 "use strict";
 
-
 $(document).ready(function() {
   let $window = $(window);
-  
-  //Плавные переходы по якорям
-  $(`.main-nav`).on(`click`, `.main-nav__link`, function(evt) {
-    evt.preventDefault();
-    let id = $(this).attr(`href`),
-        top = $(id).offset().top - 150;
-    if ($window.width() < 1150) {
-      top += 75;
-    }
-    $(`.page, html`).animate({scrollTop: top}, 800);
-  });
 
   $(document).on(`scroll`, function() {
 
     //Изменение фона хедера при скролле
     let position = $(this).scrollTop(),
-        height = $(`.promo`).height(),
+        promoHeight = $(`.promo`).height(),
         $contacts = $(`.page-header__contacts`),
         $nav = $(`.main-nav`);
     if ($window.width() > 768) {
-      if (position > height) {
+      if (position > promoHeight) {
         $nav.addClass(`main-nav--ocher`);
         $contacts.addClass(`page-header__contacts--hidden`);
       } else {
@@ -33,7 +21,9 @@ $(document).ready(function() {
     }
 
     //парслакс для блока promo
-    parallaxScroll($(`.promo__wrapper`));
+    if ($window.width() > 768) {
+      parallaxScroll($(`.promo__wrapper`));
+    }
   });
 
   function parallaxScroll(el) {
