@@ -68,6 +68,26 @@ $(document).ready(function() {
     }
   });
 
+  // // Эффекты для активных пунктов меню
+  // $(document).on(`scroll`, function() {
+  //   let $menuItems = $(`.main-nav__list .main-nav__link`),
+  //       position = $(this).scrollTop();
+  //   if ($window.width() > 768) {
+  //     $(`.js-section`).each(function() {
+  //       let id = $(this).attr(`id`),
+  //           top = $(this).offset().top - 151;
+  //       if (position > top) {
+  //         $menuItems.each(function() {
+  //           if($(this).hasClass(`main-nav__link--active`)) {
+  //             $(this).removeClass(`main-nav__link--active`).addClass(`main-nav__link--inactive`);
+  //           }
+  //         });
+  //         $(`.main-nav__list .main-nav__link[href="${id}"]`).removeClass(`main-nav__link--inactive`).addClass(`main-nav__link--active`);
+  //       }
+  //     });
+  //   }
+  // });
+
   $toggle.on(`click`, function(evt) {
     evt.preventDefault();
     

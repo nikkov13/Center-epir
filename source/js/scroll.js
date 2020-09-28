@@ -21,9 +21,9 @@ $(document).ready(function() {
     }
 
     //парслакс для блока promo
-    if ($window.width() > 768) {
-      parallaxScroll($(`.promo__wrapper`));
-    }
+    // if ($window.width() > 768) {
+    //   parallaxScroll($(`.promo__wrapper`));
+    // }
   });
 
   function parallaxScroll(el) {
