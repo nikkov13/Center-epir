@@ -27,4 +27,16 @@ function init() {
     myMap.behaviors.disable("drag");
     myMap.behaviors.disable("scrollZoom");
   }
+
+  $(window).resize(function() {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      myMap.behaviors.disable("multiTouch");
+      myMap.behaviors.disable("drag");
+      myMap.behaviors.disable("scrollZoom");
+    } else {
+      myMap.behaviors.enable("multiTouch");
+      myMap.behaviors.enable("drag");
+      myMap.behaviors.enable("scrollZoom");
+    }
+  });
 }

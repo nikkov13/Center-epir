@@ -107,6 +107,16 @@
         animation-fill-mode: forwards;
       }
     }
+      
+    &--inactive {
+      &::before {
+        background-color: $basic-ocher;
+        animation-name: rotate768;
+        animation-direction: reverse;
+        animation-fill-mode: backwards;
+        animation-duration: 1s;
+      }
+    }
   }
 }
 

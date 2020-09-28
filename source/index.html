@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Цент "ЭПИР"</title>
+  <title>Центр "ЭПИР"</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <a class="main-nav__link" href="#promo">
-          <img class="page-header__logo" src="img/epir-logo-black.png" width="160" alt="Логотип Центр ЭПИР">
+        <a class="main-nav__link main-nav__link--logo" href="#promo">
+          <picture>
+            <source media="(max-width: 1150px)" srcset="img/epir-logo-green-mobile@1x.png 1x, img/epir-logo-green-mobile@2x.png 2x">
+            <img class="page-header__logo" src="img/epir-logo-green-desktop@1x.png" alt="Логотип Центр ЭПИР">
+          </picture>
         </a>
         <button class="main-nav__toggle main-nav__toggle--close" aria-label="Открыть меню"></button>
       </div>
@@ -27,6 +30,9 @@
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#services">Наши услуги</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#reviews">Отзывы</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#write-us">Контакты</a>
@@ -51,7 +57,7 @@
     </section>
     <div class="page-main__layer">
       <section class="about-us" id="about-us">
-        <h2 class="about-us__title title">Пара слов о Нас</h2>
+        <h2 class="about-us__title title">Краткие сведения о нас</h2>
         <div class="about-us__wrapper text-wrapper">
           <p class="about-us__text">
             Наша компания работает на рынке консалтинговых услуг под наименованием Центр ЭПИР (Центр экономико-правовых исследований и разработок).
@@ -67,8 +73,8 @@
         </div>
       </section>
       <section class="team" id="team">
-        <h2 class="team__title title">Наши специалисты</h2>
-        <p class="team__description">
+        <h2 class="team__title title">Наша команда</h2>
+        <p class="team__description text-wrapper">
           Команда Центра ЭПИР – это объединение профессионалов, являющихся выпускниками ведущих вузов страны
           (РЭУ им. Плеханова, МГУ им. М.В. Ломоносова, МФТИ, МИСиС, МГЮА им. О.Е. Кутафина, ВШЭ, МГИМО) и включает на сегодняшний день
           17 высококвалифицированных специалистов: отельеров, рестораторов, адвокатов, юристов, экономистов, налоговых консультантов,
@@ -79,21 +85,38 @@
           <ul class="team__list js-carousel__list">
             <li class="team__item person-card js-carousel__item">
               <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
-              <p class="person-card__name">Имя Фамилия</p>
-              <span class="person-card__position">Должность</span>
-              <p class="person-card__description">Краткая информация о сотруднике</p>
+              <p class="person-card__name">Светлана Баксанова</p>
+              <p class="person-card__position">Управляющий партнер</p>
             </li>
             <li class="team__item person-card js-carousel__item">
               <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
-              <p class="person-card__name">Имя Фамилия</p>
-              <span class="person-card__position">Должность</span>
-              <p class="person-card__description">Краткая информация о сотруднике</p>
+              <p class="person-card__name">Юлия Ковалева</p>
+              <p class="person-card__position">Генеральный директор, экономист</p>
             </li>
             <li class="team__item person-card js-carousel__item">
               <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
-              <p class="person-card__name">Имя Фамилия</p>
-              <span class="person-card__position">Должность</span>
-              <p class="person-card__description">Краткая информация о сотруднике</p>
+              <p class="person-card__name">Илья Басалыга</p>
+              <p class="person-card__position">Директор по развитию</p>
+            </li>
+            <li class="team__item person-card js-carousel__item">
+              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+              <p class="person-card__name">Азрет Алоев</p>
+              <p class="person-card__position">Руководитель отдела экономического пранирования и анализа</p>
+            </li>
+            <li class="team__item person-card js-carousel__item">
+              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+              <p class="person-card__name">Андрухова Лариса</p>
+              <p class="person-card__position">Адвокат</p>
+            </li>
+            <li class="team__item person-card js-carousel__item">
+              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+              <p class="person-card__name">Губанова Наталья</p>
+              <p class="person-card__position">Заместитель генерального директора по юридическим вопросам</p>
+            </li>
+            <li class="team__item person-card js-carousel__item">
+              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+              <p class="person-card__name">Федотова Ирина</p>
+              <p class="person-card__position">Заместитель генерального директора по бюджетированию, управленческому консалтингу и контролю</p>
             </li>
           </ul>
         </div>
@@ -200,40 +223,81 @@
       </section>
       <section class="services" id="services">
         <h2 class="services__title title">Наши услуги</h2>
-        <ul class="services__list">
-          <li class="services__item services-card">
-            <h3 class="services-card__title">Инвестиционный консалтинг</h3>
-            <!-- Content -->
+        <ul class="services__list js-services__list">
+          <li class="services__item services-card js-services__card">
+            <h3 class="services-card__title js-services__button" data-service="investments">Инвестиционный консалтинг</h3>
+            <p class="services-card__text js-services__text services-card__text--close" data-service="investments">
+              Комплексное сопровождение инвестиционных проектов от стадии исследования инвестиционной привлекательности, проведения
+              Due Diligence и оценки рисков, разработки концепций развития, составления и экспертизы бизнес-планов до вывода их на
+              проектную мощность. В активе нашей команды свыше 100 успешно реализованных инвестпроектов стоимостью от 10 до 130 млн.
+              долл. в строительной индустрии, гостиничной и санаторно-курортной отрасли, ритейле, сельском хозяйстве, офисной и
+              складской недвижимости.
+            </p>
           </li>
           <li class="services__item services-card">
-            <h3 class="services-card__title">Налоговый консалтинг</h3>
-            <!-- Content -->
+            <h3 class="services-card__title js-services__button" data-service="taxes">Налоговый консалтинг</h3>
+            <p class="services-card__text js-services__text services-card__text--close" data-service="taxes">
+              Разработка оптимальных бизнес-моделей, анализ налоговой безопасности проектов, защита интересов клиента в спорах с
+              налоговыми органами. В результате досудебных и судебных разбирательств с налоговыми органами при защите интересов наших
+              клиентов налоговые органы вынуждены были отказаться от претензий по незаконным доначислениям на общую сумму более 750 млн.
+              рублей.
+            </p>
           </li>
           <li class="services__item services-card">
-            <h3 class="services-card__title">Юридический консалтинг</h3>
-            <!-- Content -->
+            <h3 class="services-card__title js-services__button" data-service="law">Юридический консалтинг</h3>
+            <p class="services-card__text js-services__text services-card__text--close" data-service="law">
+              Представление интересов клиентов в гражданском и административном судопроизводстве, в налоговых и таможенных
+              правоотношениях, в органах государственной власти и органах местного самоуправления, адвокатские услуги (в структуру
+              Центра ЭПИР входят 3 Адвокатских кабинета), разработка законопроектов. Имеется значительный опыт успешного участия в
+              судебных разбирательствах – в арбитражных судах РФ, в судах общей юрисдикции РФ, в иностранных судах – более 20
+              выигранных судебных дел, в результате которых взыскано в пользу клиентов более 1,4 млрд. рублей.
+            </p>
           </li>
           <li class="services__item services-card">
-            <h3 class="services-card__title">Управленческий консалтинг</h3>
-            <!-- Content -->
+            <h3 class="services-card__title js-services__button" data-service="management">Управленческий консалтинг</h3>
+            <p class="services-card__text js-services__text services-card__text--close" data-service="management">
+              Внедрение системы бюджетирования, управленческого учета и отчетности по центрам финансовой ответственности, оценка
+              состояния бизнеса и разработка стратегии его дальнейшего развития, разработка эффективной системы мотивации персонала
+              и т.д.
+            </p>
           </li>
           <li class="services__item services-card">
-            <h3 class="services-card__title">Аудит и сопутсвующие услуги</h3>
-            <!-- Content -->
+            <h3 class="services-card__title js-services__button" data-service="audit">Аудит и сопутсвующие услуги</h3>
+            <p class="services-card__text js-services__text services-card__text--close" data-service="audit">
+              Проведение обязательного, инициативного, налогового и экспресс-аудита, консультирование по вопросам финансового,
+              налогового, банковского и иного законодательства, консультирование по вопросам применения международных стандартов
+              финансовой отчетности.
+            </p>
           </li>
           <li class="services__item services-card">
-            <h3 class="services-card__title">Управление активами</h3>
-            <!-- Content -->
+            <h3 class="services-card__title js-services__button" data-service="assets">Управление активами</h3>
+            <p class="services-card__text js-services__text services-card__text--close" data-service="assets">
+              Эффективное оперативное управление деятельностью бизнес-объектов в интересах собственников. Оптимизация всех
+              бизнес-процессов с целью повышения рентабельности объекта в долгосрочной перспективе. Периодическая управленческая
+              отчетность собственникам объектов.
+            </p>
           </li>
           <li class="services__item services-card">
-            <h3 class="services-card__title">Сопровождение прохождения Compliance частными клиентами</h3>
-            <!-- Content -->
+            <h3 class="services-card__title js-services__button" data-service="compliance">Сопровождение прохождения Compliance частными клиентами</h3>
+            <p class="services-card__text js-services__text services-card__text--close" data-service="compliance">
+              Восстановление истории активов по сохранившимся документам и сведениям, подготовка к прохождению Compliance, открытие
+              счетов в иностранных банках, консультации по вопросам налогового резидентства (Великобритания, США, Испания, Франция,
+              Монако, Австрия, Швейцария, Черногория, Румыния, ОАЭ и т.д.).
+            </p>
           </li>
           <li class="services__item services-card">
-            <h3 class="services-card__title">Прочие услуги по сопровождению бизнеса</h3>
-            <!-- Content -->
+            <h3 class="services-card__title js-services__button" data-service="other">Прочие услуги по сопровождению бизнеса</h3>
+            <p class="services-card__text js-services__text services-card__text--close" data-service="other">
+              Урегулирование бизнес-конфликтов (в т.ч. в качестве третейских судей), выполнение функций особо доверенных лиц (эскроу-агентов) и т.д.
+            </p>
           </li>
         </ul>
+      </section>
+      <section class="reviews" id="reviews">
+        <h2 class="reviews__title title">Отзывы</h2>
+        <p class="reviews__text text-wrapper">
+          Раздел с благодарственными письмами в разработке
+        </p>
       </section>
       <section class="write-us" id="write-us">
         <div class="write-us__wrapper">
@@ -278,5 +342,7 @@
   <script src="js/tab-slider.min.js"></script>
   <script src="js/main-nav.min.js"></script>
   <script src="js/carousel.min.js"></script>
+  <script src="js/services.min.js"></script>
+  <script src="js/form.min.js"></script>
 </body>
 </html>
