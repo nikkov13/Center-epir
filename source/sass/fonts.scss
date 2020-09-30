@@ -6,6 +6,22 @@
 }
 
 @font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-italic-400.woff2") format("woff2"),
+      url("../fonts/roboto-italic-400.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-italic-700.woff2") format("woff2"),
+      url("../fonts/roboto-italic-700.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
   font-family: "Rubik";
   src: url("../fonts/rubik-400.woff2") format("woff2"),
     url("../fonts/rubik-400.woff") format("woff");

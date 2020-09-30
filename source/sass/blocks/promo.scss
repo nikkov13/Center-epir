@@ -12,10 +12,15 @@
   background-position: 50% 0;
   background-attachment: fixed;
 
+  @media (max-width: 1150px) {
+    background-position: 50% 0;
+  }
+
   @media (max-width: 768px) {
-    padding-top: 65px;
-    background-size: auto 100vh;
-    background-position: 50% 60px;
+    padding-top: 55px;
+    background-image: url("../img/header-background-mobile.jpg");
+    background-size: auto;
+    background-position: 50% 55px;
   }
 }
 
