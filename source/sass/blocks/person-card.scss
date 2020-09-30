@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid $basic-ocher;
 }
 
 .person-card__image {
@@ -23,6 +22,7 @@
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 22px;
   font-weight: 400;
+  text-align: center;
 }
 
 .person-card__position {
