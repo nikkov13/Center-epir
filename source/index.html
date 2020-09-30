@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Центр "ЭПИР"</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
@@ -47,7 +48,13 @@
   <main class="page-main">
     <h1 class="visually-hidden">Консалтинговая компания Центр ЭПИР</h1>
     <section class="promo" id="promo">
-      <h2 class="visually-hidden">Надежный консультант вашего бизнеса</h2>
+      <div class="promo__wrapper visually-hidden">
+        <h2 class="promo__title title title--main">Надежный консультант вашего бизнеса</h2>
+        <p class="promo__text">
+          Центр ЭПИР - это комплексный оператор бизнес услуг, одна из ведущих консалтинговых компаний Москвы, занимающая лидирующюю
+          позицию по уровню клиентского сервиса.
+        </p>
+      </div>
     </section>
     <div class="page-main__layer">
       <section class="about-us js-section" id="about-us">
@@ -75,45 +82,43 @@
           аудиторов, специалистов в области управленческого консалтинга, специалистов по МСФО, инвестиционных аналитиков,
           математиков-кибернетиков, IT – специалистов.
         </p>
-        <div class="team__list-wrapper js-carousel">
-          <ul class="team__list js-carousel__list">
-            <li class="team__item person-card js-carousel__item">
-              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
-              <p class="person-card__name">Светлана Баксанова</p>
-              <p class="person-card__position">Управляющий партнер</p>
-            </li>
-            <li class="team__item person-card js-carousel__item">
-              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
-              <p class="person-card__name">Юлия Ковалева</p>
-              <p class="person-card__position">Генеральный директор, экономист</p>
-            </li>
-            <li class="team__item person-card js-carousel__item">
-              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
-              <p class="person-card__name">Илья Басалыга</p>
-              <p class="person-card__position">Директор по развитию</p>
-            </li>
-            <li class="team__item person-card js-carousel__item">
-              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
-              <p class="person-card__name">Азрет Алоев</p>
-              <p class="person-card__position">Руководитель отдела экономического пранирования и анализа</p>
-            </li>
-            <li class="team__item person-card js-carousel__item">
-              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
-              <p class="person-card__name">Лариса Андрухова</p>
-              <p class="person-card__position">Адвокат</p>
-            </li>
-            <li class="team__item person-card js-carousel__item">
-              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
-              <p class="person-card__name">Наталья Губанова</p>
-              <p class="person-card__position">Заместитель генерального директора по юридическим вопросам</p>
-            </li>
-            <li class="team__item person-card js-carousel__item">
-              <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
-              <p class="person-card__name">Ирина Федотова</p>
-              <p class="person-card__position">Заместитель генерального директора по бюджетированию, управленческому консалтингу и контролю</p>
-            </li>
-          </ul>
-        </div>
+        <ul class="team__list js-carousel__list">
+          <li class="team__item person-card js-carousel__item">
+            <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+            <p class="person-card__name">Светлана Баксанова</p>
+            <p class="person-card__position">Управляющий партнер</p>
+          </li>
+          <li class="team__item person-card js-carousel__item">
+            <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+            <p class="person-card__name">Юлия Ковалева</p>
+            <p class="person-card__position">Генеральный директор, экономист</p>
+          </li>
+          <li class="team__item person-card js-carousel__item">
+            <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+            <p class="person-card__name">Илья Басалыга</p>
+            <p class="person-card__position">Директор по развитию</p>
+          </li>
+          <li class="team__item person-card js-carousel__item">
+            <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+            <p class="person-card__name">Азрет Алоев</p>
+            <p class="person-card__position">Руководитель отдела экономического пранирования и анализа</p>
+          </li>
+          <li class="team__item person-card js-carousel__item">
+            <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+            <p class="person-card__name">Лариса Андрухова</p>
+            <p class="person-card__position">Адвокат</p>
+          </li>
+          <li class="team__item person-card js-carousel__item">
+            <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+            <p class="person-card__name">Наталья Губанова</p>
+            <p class="person-card__position">Заместитель генерального директора по юридическим вопросам</p>
+          </li>
+          <li class="team__item person-card js-carousel__item">
+            <img class="person-card__image" src="https://via.placeholder.com/260x260" alt="Сотрудник Имя Фамилия">
+            <p class="person-card__name">Ирина Федотова</p>
+            <p class="person-card__position">Заместитель генерального директора по бюджетированию, управленческому консалтингу и контролю</p>
+          </li>
+        </ul>
       </section>
       <section class="projects js-section" id="projects">
         <h2 class="projects__title title">Наши клиенты и реализованные проекты клиентов</h2>
@@ -335,6 +340,7 @@
   <script src="js/map.min.js"></script>
   <script src="js/tab-slider.min.js"></script>
   <script src="js/main-nav.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/carousel.min.js"></script>
   <script src="js/services.min.js"></script>
   <script src="js/form.min.js"></script>
