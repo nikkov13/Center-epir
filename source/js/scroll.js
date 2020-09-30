@@ -19,15 +19,15 @@ $(document).ready(function() {
         $contacts.removeClass(`page-header__contacts--hidden`);
       }
     }
-
+  });
+  
     //парслакс для блока promo
     // if ($window.width() > 768) {
     //   parallaxScroll($(`.promo__wrapper`));
     // }
-  });
 
-  function parallaxScroll(el) {
-    let scrolled = $window.scrollTop();
-    el.css(`top`, (0 + (scrolled * 0.5)) + `px`);
-  }
+  // function parallaxScroll(el) {
+  //   let scrolled = $window.scrollTop();
+  //   el.css(`top`, (0 + (scrolled * 0.5)) + `px`);
+  // }
 });

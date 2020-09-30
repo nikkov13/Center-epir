@@ -1,0 +1,67 @@
+.wisdom {
+  width: 50%;
+  min-height: 110px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  margin-bottom: 120px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    min-height: 175px;
+    margin-top: 75px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 425px) {
+    min-height: 230px;
+  }
+}
+
+.wisdom__quote {
+  position: relative;
+  margin-right: 30px;
+  font-style: italic;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1.5s,
+              transform 1.5s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    top: -40px;
+    left: -40px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+
+    @media (max-width: 1150px) {
+      width: 80px;
+      height: 80px;
+      top: -30px;
+      left: -30px;
+    }
+  }
+
+  &--active {
+    opacity: 1;
+    transform: none;
+  }
+
+  &--hide {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+.wisdom__author {
+  display: block;
+  margin-top: 10px;
+  margin-right: 15px;
+  font-weight: 700;
+  text-align: right;
+}
