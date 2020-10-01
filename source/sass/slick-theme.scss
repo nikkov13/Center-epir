@@ -2,6 +2,14 @@
   margin-bottom: 50px;
 }
 
+.slick-track {
+  margin-bottom: 20px;
+
+  @media (max-width: 1150px) {
+    margin-bottom: 10px;
+  }
+}
+
 .slick-slide {
   &:focus {
     outline: none;
