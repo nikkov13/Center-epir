@@ -26,6 +26,7 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .services__item {
