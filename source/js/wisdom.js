@@ -22,5 +22,5 @@ $(document).ready(function() {
   }
 
   nextQuote();
-  setInterval(nextQuote, 8000);
+  setInterval(nextQuote, 20000);
 });
