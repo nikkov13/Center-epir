@@ -18,7 +18,7 @@ $(document).ready(function() {
     let current = $quotes.eq(quoteNumber);
     setTimeout(() => {
       current.removeClass(`visually-hidden`).addClass(`wisdom__quote--active`)
-    }, 1500);
+    }, 1000);
   }
 
   nextQuote();
